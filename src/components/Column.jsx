@@ -6,6 +6,12 @@ import { produce } from "immer";
 const Column = ({ id, title, tasks = [], columnIndex }) => {
   const { selectedBoardIndex, data, setData } = useContext(DataContext);
 
+  /*************  ✨ Codeium Command ⭐  *************/
+  /**
+   * A function that creates a new task object with a unique id and a title
+   * @returns {{ id: number, title: string }}
+   */
+  /******  4013d5e9-ac76-4190-acf3-6dc1406fba1e  *******/
   const createNewTask = () => ({
     id: Date.now(),
     title: "New Task",
